@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Bootstrap Take Two</title>
+	
+		<!-- The below ensures that the webpage will respond to the user's screen size -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Very important links to the bootstrap frame work #1 and to the customizations #2 -->
+
+		<link href ="css/bootstrap.min.css" rel = "stylesheet ">
+		<link href = "css/style.css" rel = "stylesheet">
+
+			</head>
+	<body>
+
+		<!-- The navbar at the top. Default for white, inverse for black. Static for one that doesn't follow scrolling and "fixed" for one that does -->
+		<div class = "navbar navbar-inverse navbar-static-top"
+
+		<!-- ensures that everything following is centered and stays in the navbar -->
+			<div class = "container">
+
+				<a href = "#" class = "navbar-brand">#GetMyCodeOn</a> 
+
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+
+				<!--Ensures that the header collapses on a small screen like a mobile, until you press a button (to come)-->
+
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+
+				<!-- styles the navbar item and moves it to the right -->
+					<ul class = "nav navbar-nav navbar-right">
+ 
+							<!-- The class "active" works on most things that are buttons, indents them -->
+
+							<li class = "active"><a href = "#">Home</a></li>
+							<li><a href = "#">Our Team</a></li>
+							<li><a href = "#">Blog</a></li>
+							<li class = "dropdown">
+
+								<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media<b class = "caret"> </b> </a>
+								<ul class = "dropdown-menu">
+									<li> <a href = "#">Twitter</a></li>
+									<li> <a href = "#">Facebook</a></li>
+									<li> <a href = "#">Instagram</a></li>
+									<li> <a href = "#">Google+</a></li>
+								</ul>
+
+							<li><a href = "#">Portfolio</a></li>
+							<li><a href = "#">Contact</a></li>
+
+						</ul> 
+				</div>
+			</div>
+		</div>
+
+				<div class = "container">
+
+						<div class = "jumbotron">
+							<center><h1> Portfolio </h1>
+							<p>This is the place to see our work and more importantly our progress (fingers crossed)</p>
+							<a href = "https://www.facebook.com/media/set/?set=oa.1513861358837696&type=1" class = "btn btn-success">Check it out</a>
+							<a class = "btn btn-info">Tweet</a> </center>
+
+						</div>
+
+				</div>
+
+		<div class = "container">
+
+			<div class = "row">
+
+				<div class = "col-md-3">
+
+					<h3> <a href = "https://github.com/GetMyCodeOn">Our Work</a><h3>
+					<p><h4>This is where we will showcase the work we have done and write about the features we have added</p> </h4>
+					<a href = '#' class = "btn btn-default">Read More</a>
+
+
+				</div>
+
+				<div class = "col-md-3">
+
+					<h3> <a href = "https://github.com/GetMyCodeOn">Code</a><h3>
+					<p><h4>This is where we will showcase the work we have done and write about the features we have added</p> </h4>
+					<a href = '#' class = "btn btn-default">Read More</a>
+
+
+				</div>
+
+				<div class = "col-md-3">
+
+					<h3> <a href = "https://github.com/GetMyCodeOn">Tutorials</a><h3>
+					<p><h4>This is where we will showcase the work we have done and write about the features we have added</p> </h4>
+					<a href = '#' class = "btn btn-default">Read More</a>
+
+
+				</div>
+
+				<div class = "col-md-3">
+
+					<h3> <a href = "https://github.com/GetMyCodeOn">Resources</a><h3>
+					<p><h4>This is where we will showcase the work we have done and write about the features we have added</p> </h4>
+					<a href = '#' class = "btn btn-default">Read More</a>
+
+
+				</div>
+
+			</div>
+
+		</div>
+			
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+
+			<div class = "container">
+				<p class = "navbar-text pull-left">Site Built by Aske Robenhagen</p>
+				<a href = "https://twitter.com/AskeRobenhagen" class = "navbar-btn btn-info btn pull-right">Follow on Twitter</a>
+
+			</div>
+
+		</div>
+			
+
+
+	<script src ="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src ="js/bootstrap.js"></script>
+
+	</body>
+
+</html>
