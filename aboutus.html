@@ -8,42 +8,49 @@
 </head>
 <body>
 
-<div class= "navbar navbar-inverse navbar-static-top">
-<div class = "container">
-		<a href = "#" class = "navbar-brand">GetMyCodeOn</a>
-		<button type="button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse"> 
-		<span class = "icon-bar"></span>
-		<span class = "icon-bar"></span>
-		<span class = "icon-bar"></span>
-		
-		 </button>
+<div class = "navbar navbar-inverse navbar-static-top"
 
+		<!-- ensures that everything following is centered and stays in the navbar -->
+			<div class = "container">
 
-		<div class = "collapse navbar-collapse navHeaderCollapse"> 
-				<ul class =  "nav navbar-nav navbar-right">
-					
-						<li ><a href = "#">Home</a></li>
-						<li class = "active"><a href = "#">Our Team</a></li>
-						<li class = "dropdown">
-					
-							<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Blog<b class ="caret"></b></a>
-							<ul class = "dropdown-menu" role = "menu"> 
-								<li role="presentation"><a role="menuitem" href = "#">Week 1</a></li>
-								<li role="presentation"><a role="menuitem" href = "#">Week 2</a></li>
-								<li role="presentation"><a role="menuitem" href = "#">Week 3</a></li>
-							</ul>
-						</li>
-						
+				<a class = "navbar-brand">#GetMyCodeOn</a> 
 
-						<li><a href = "#">Social Media</a></li>
-						<li><a href = "#">Portfolio</a></li>
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
 
-				</ul>
+				<!--Ensures that the header collapses on a small screen like a mobile, until you press a button (to come)-->
 
+				<div class = "collapse navbar-collapse navHeaderCollapse">
 
+				<!-- styles the navbar item and moves it to the right -->
+					<ul class = "nav navbar-nav navbar-right">
+ 
+							<!-- The class "active" works on most things that are buttons, indents them -->
+
+							<li class = "active"><a href = "/Final">Home</a></li>
+							<li><a href = "/Final/aboutus">Our Team</a></li>
+							<li><a href = "/Blog">Blog</a></li>
+							<li class = "dropdown">
+
+								<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media<b class = "caret"> </b> </a>
+								<ul class = "dropdown-menu">
+									<li> <a href = "#">Twitter</a></li>
+									<li> <a href = "#">Facebook</a></li>
+									<li> <a href = "#">Instagram</a></li>
+									<li> <a href = "#">Google+</a></li>
+								</ul>
+
+							<li><a href = "#">Portfolio</a></li>
+							<li><a href = "#">Contact</a></li>
+
+						</ul> 
+				</div>
+			</div>
 		</div>
-</div>
-</div>
+</header>
 <div class = "container">
 <div class = "jumbotron">
 		<h1>Meet the Team</h1>
