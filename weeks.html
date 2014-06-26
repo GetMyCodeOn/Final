@@ -1,48 +1,40 @@
-<!DOC TYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Bootstrap 3</title>
-	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
-		<link href = "Boot/css/bootstrap.min.css" rel = "stylesheet">
-		<link href = "Boot/styles.css" rel = "stylesheet">
+<title>Bootstrap 3</title>
+<!-- this ensures that it will display the right versions on different formats e.g. web,tablet, mobile --> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href ="Boot/css/bootstrap.min.css" rel = "stylesheet ">
+<link href = "Boot/css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<!-- The navbar at the top. Default for white, inverse for black. Static for one that doesn't follow scrolling and "fixed" for one that does -->
-		<div class = "navbar navbar-inverse navbar-static-top"
-
-		<!-- ensures that everything following is centered and stays in the navbar -->
-			<div class = "container">
-
-				<a class = "navbar-brand">#GetMyCodeOn</a> 
-
-				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-					<span class = "icon-bar"></span>
-					<span class = "icon-bar"></span>
-					<span class = "icon-bar"></span>
-				</button>
-
-				<!--Ensures that the header collapses on a small screen like a mobile, until you press a button (to come)-->
-
-				<div class = "collapse navbar-collapse navHeaderCollapse">
-
-				<!-- styles the navbar item and moves it to the right -->
-					<ul class = "nav navbar-nav navbar-right">
- 
-							<!-- The class "active" works on most things that are buttons, indents them -->
+<!-- INSERTING NAV BAR -->
+<div class = "navbar navbar-inverse navbar-static-top">
+<div class= "container">
+<!-- the # is where your url will go -->
+<a href = "#" class = "navbar-brand">#GetMyCodeOn</a>
+<!-- This is so it collapses on mobile -->
+<button class ="navbar-toggle" data-toggle+"collapse" data-target =".navHeaderCollapse">
+<span class= "icon-bar"></span>
+<span class= "icon-bar"></span>
+<span class= "icon-bar"></span>
+</button>
+<!-- This will allow to collapse when you are on mobile -->
+<div class = "collapse navbar-collapse navHeaderCollapse">
+<ul class= "nav navbar-nav navbar-right">
 
 							<li><a href = "/Final">Home</a></li>
 							<li><a href = "/Final/aboutus?">Our Team</a></li>
 							
-							<li class = "dropdown active ">
+							<li class = "dropdown active">
 
 								<a href = "/Final/weeks" class = "dropdown-toggle" data-toggle = "dropdown"> Blog <b class = "caret"></b> </a>
 								<ul class = "dropdown-menu">
-									<li> <a href = "#">Jack</a></li>
-									<li> <a href = "#">Olivia</a></li>
-									<li> <a href = "#">Aske</a></li>
-									<li> <a href = "#">Nafisa</a></li>
+									<li> <a href = "/Final/jackblog">Jack</a></li>
+									<li> <a href = "/Final/oliviablog">Olivia</a></li>
+									<li> <a href = "/Final/askeblog">Aske</a></li>
+									<li> <a href = "/Final/nafisablog">Nafisa</a></li>
 								</ul>
-							<li><a href = "/Final/socialmedia">Social Media</a></li>
+							<li ><a href = "/Final/socialmedia">Social Media</a></li>
 
 							<li><a href = "/Final/portfolio2">Portfolio</a></li>
 							<li><a href = "#">Contact</a></li>
@@ -55,10 +47,10 @@
 <div class = "jumbotron">
 		<h1>Blog</h1>
 		<p>Welcome to our Blog</p>
-		<a href = "#WeekOne" class = "btn btn-success">Week One</a>
-		<a href = "#WeekTwo"class = "btn btn-warning">Week Two</a>
-		<a class = "btn btn-primary">Week Three</a>
-		<a class = "btn btn-danger">Week Four</a>
+		<a href = "/Final/jackblog" class = "btn btn-success">Jack's Blog</a>
+		<a href = "/Final/oliviablog"class = "btn btn-warning">Olivia's Blog</a>
+		<a href = "/Final/askeblog"class = "btn btn-primary">Aske's Blog</a>
+		<a href = "Final/nafisablog"class = "btn btn-danger">Nafisa's Blog</a>
 
 </div>
 
@@ -71,89 +63,47 @@
 
 <h2>End of Week One Summary</h2>
 
-<h1>How do you feel after your first week at founders and coders? </h1>
-<p>JP: Pretty ecstatic! I feel like I’ve come on leaps and bounds since the first day, which basically consisted of me trying to keep my head above water! As a group, we pulled through the challenges and learnt more as a consequence of being thrown in at the deep end! It was uncomfortable to being with, not knowing anything but I feel like I’ve picked up much more as a result. 
-ON: Wow! What an incredible week. I’ve feel like I’ve learnt so much in such a short space of time and yet have so much more to learn! The wealth of knowledge I feel like I have acquired in just one week is incredibly exciting. Bring on the next seven weeks! 
-AR: Positively surprised! I expected the usual kind of taught learning environment and was slightly sceptical after day one having been thrown in at deep end! It’s a very different learning style compared to university but I feel like I’ve learnt a lot more in a short space of time. Perhaps a balance of lectures and self-teaching would have been better!
-NZ: I feel really satisfied in terms of the amount I’ve learnt. I would say that I am able to make a fully functioning website which I didn’t think I’d be able to do at the start of the week. Coming fresh from university I wasn’t used to this type of working environment and I’ve had to adapt quite quickly but I’ve learnt much more in the process, both about myself, and technically. </p>
+<h3>How do you feel after your first week at founders and coders? </h3>
 
-<h1>What was your favourite part of the week?</h1>
-<p>JP: I really enjoyed my role as presenter. I feel like I presented a lot of good stuff and was able to take pride in showing off the stuff we had accomplished as a group! 
-ON: Friday was by far my favourite part of the week. The team really came together and worked well to complete the first assignment of designing a website. The beginning of the week had seemed so daunting and success improbable so to be able to achieve our goals as a team was really great!  
-AR: When we built our first website using Bootstrap that looked really good and was dynamic and moments where you feel like ‘I really get this!’. 
-NZ: Seeing how our website evolved over the week! On day two we had successfully made a website. It was really basic and really bad! By day three we had turned it into something I would be happy to publish on the internet. Looking at that change in just one day was incredibly fulfilling and represents how quickly you learn on the course. </p>
+<p><strong>JP:</strong> Pretty ecstatic! I feel like I've come on leaps and bounds since the first day, which basically consisted of me trying to keep my head above water! As a group, we pulled through the challenges and learnt more as a consequence of being thrown in at the deep end! It was uncomfortable to being with, not knowing anything but I feel like I've picked up much more as a result. </p>
+<p><strong>ON: </strong>Wow! What an incredible week. I've feel like I've learnt so much in such a short space of time and yet have so much more to learn! The wealth of knowledge I feel like I have acquired in just one week is incredibly exciting. Bring on the next seven weeks! </p>
+<p><strong>AR: </strong> Positively surprised! I expected the usual kind of taught learning environment and was slightly sceptical after day one having been thrown in at deep end! It's a very different learning style compared to university but I feel like I've learnt a lot more in a short space of time. Perhaps a balance of lectures and self-teaching would have been better!</p>
+<p><strong>NZ: </strong> I feel really satisfied in terms of the amount I've learnt. I would say that I am able to make a fully functioning website which I didn't think I'd be able to do at the start of the week. Coming fresh from university I wasn't used to this type of working environment and I've had to adapt quite quickly but I've learnt much more in the process, both about myself, and technically. </p>
 
-<h1>What was your least favourite part of the week?</h1>
-<p>JP: Definitely day one! I was very confused! 
-ON: The end of day one! I think we all left feeling completely confused and frustrated. I had no idea what I was going on with terminal and GitHub and was slightly worried for the rest of the week! 
-AR: Day one! I couldn’t get GitHub to work properly and I found it very frustrating just sat there googling things!
-NZ: Day one, just because I left thinking how on earth am I going to get through the next 7 weeks! Day one felt really manic, but in hindsight I see the method in the madness! Coding is a lot about problem solving perseverance is an important skill to learn! </p>
+<h3>What was your favourite part of the week?</h3>
+<p><strong>JP:</strong> I really enjoyed my role as presenter. I feel like I presented a lot of good stuff and was able to take pride in showing off the stuff we had accomplished as a group! </p>
+<p><strong>ON:</strong> Friday was by far my favourite part of the week. The team really came together and worked well to complete the first assignment of designing a website. The beginning of the week had seemed so daunting and success improbable so to be able to achieve our goals as a team was really great!  </p>
+<p><strong>AR: </strong>When we built our first website using Bootstrap that looked really good and was dynamic and moments where you feel like 'I really get this!'. </p>
+<p><strong>NZ: </strong> Seeing how our website evolved over the week! On day two we had successfully made a website. It was really basic and really bad! By day three we had turned it into something I would be happy to publish on the internet. Looking at that change in just one day was incredibly fulfilling and represents how quickly you learn on the course. </p>
 
-<h1>The most useful technical skill you’ve learnt so far?</h1>
-<p>JP: Finally understanding what Jekyll and Bootstrap did after having spent a lot of time not understanding what they did! Dan’s guidance really helped.
-ON: I think getting to grips with the terminal on my computer and all the useful functions it can do has been invaluable. Even if I don’t pursue a career in software development I feel that it is important to know the basics of how the computer works. 
-AR: Having the technical skills to access a vast number of resources that are available on the web and begin to work through and understand them; Bootstrap for example. 
-NZ: Bootstrap!  Being able to use it as an inexperienced coder allows you to bypass some of the design stuff. You don’t have to start form scratch but you still get the same results. It allows you to concentrate on playing around with creativity and develop technical skills too. It’s a good tool for a beginner.</p>
+<h3>What was your least favourite part of the week?</h3>
+<p><strong>JP:</strong> Definitely day one! I was very confused! </p>
 
-<h1>Any advice for prospective candidates?</h1>
-<p>JP: Don’t think about giving up on day one because you’ll fell better by day four!
-ON: I’ve had a fantastic time on the course so far and have met an amazing group of talent individuals. It’s been really exciting to work as a team to create something and would highly recommend the course to anyone! Be prepared to work hard though! 
-AR: Go for it! Come in with an open mind and don’t expect classic learning environment!
-NZ: Firstly, be prepared to work hard. Unlearn how you learnt before because it’s such a different learning style! You need to be proactive and use initiative. Definitely do the course! Grad/entrepreneur/business owner/ ; whatever stage of your life and goals just do  it. It brings so much to you both in terms of personal and technical growth. </p>
+<p><strong>ON: </strong> The end of day one! I think we all left feeling completely confused and frustrated. I had no idea what I was going on with terminal and GitHub and was slightly worried for the rest of the week! </p>
 
-<h1>What is your main goal for the end of the 7 weeks?</h1>
-<p>JP: To be able to create a fully functioning dynamic website. Not just based on twitter bootstrap! 
-ON: I’d love to have a good understanding of many aspects of software development and feel confident in my ability to self-improve and learn further programming languages. 
-AR: To feel comfortable offering my services or building my own product.
-NZ: To be able to be in a position where I could freelance and also where I can have a serious input into the technical side of my business. I would like to be sustainable. Not having to look to other people and having the technical knowledge to articulate what I want. </p>
+<p><strong>AR: </strong> Day one! I couldn't get GitHub to work properly and I found it very frustrating just sat there googling things! </p>
 
+<p><strong>NZ: </strong> Day one, just because I left thinking how on earth am I going to get through the next 7 weeks! Day one felt really manic, but in hindsight I see the method in the madness! Coding is a lot about problem solving perseverance is an important skill to learn! </p>
 
+<h3>The most useful technical skill you've learnt so far?</h3>
+<p><strong>JP: </strong> Finally understanding what Jekyll and Bootstrap did after having spent a lot of time not understanding what they did! Dan's guidance really helped.</p>
+<p><strong>ON: </strong> I think getting to grips with the terminal on my computer and all the useful functions it can do has been invaluable. Even if I don't pursue a career in software development I feel that it is important to know the basics of how the computer works. </p>
+<p><strong>AR: </strong> Having the technical skills to access a vast number of resources that are available on the web and begin to work through and understand them; Bootstrap for example. </p>
+<p><strong>NZ: </strong> Bootstrap!  Being able to use it as an inexperienced coder allows you to bypass some of the design stuff. You don't have to start form scratch but you still get the same results. It allows you to concentrate on playing around with creativity and develop technical skills too. It's a good tool for a beginner.</p>
 
+<h3>Any advice for prospective candidates?</h3>
+<p><strong>JP: </strong> Don't think about giving up on day one because you'll fell better by day four!</p>
+<p><strong>ON: </strong> I've had a fantastic time on the course so far and have met an amazing group of talent individuals. It's been really exciting to work as a team to create something and would highly recommend the course to anyone! Be prepared to work hard though! </p>
+<p><strong>AR: </strong> Go for it! Come in with an open mind and don't expect classic learning environment!</p>
+<strong>NZ: </strong> Firstly, be prepared to work hard. Unlearn how you learnt before because it's such a different learning style! You need to be proactive and use initiative. Definitely do the course! Grad/entrepreneur/business owner/ ; whatever stage of your life and goals just do  it. It brings so much to you both in terms of personal and technical growth. </p>
 
-
-
+<h3>What is your main goal for the end of the 7 weeks?</h3>
+<p><strong>JP: </strong>To be able to create a fully functioning dynamic website. Not just based on twitter bootstrap! </p>
+<p><strong>ON: </strong> I'd love to have a good understanding of many aspects of software development and feel confident in my ability to self-improve and learn further programming languages. </p>
+<p><strong>AR:</strong> To feel comfortable offering my services or building my own product.</p>
+<p><strong>NZ: </strong> To be able to be in a position where I could freelance and also where I can have a serious input into the technical side of my business. I would like to be sustainable. Not having to look to other people and having the technical knowledge to articulate what I want. </p>
 
 
-				<h4><a name="DayOne" style = "color:Black">Day One: Blind Leading the Blind</a>
-				</h4>
-					<p>Olivia: First day at Founders and Coders! We were thrown right in at the deep end and asked to create a blog site by the end of the week! Initially, we were split into teams of four with each member taking on a role for the week, mine being the tutor. Team #GetMyCodeOn was born! Firstly, we had to set up our development (dev) environments and create a repository on github, which would become our blogsite. I spent the rest of the day along with my team members attempting to get to grips with all the commands git pull/git commit etc. After a frustrating day of error line after error line we finally managed to set up an organisation team page on git hub and created our first repository!</p>
-					<p>Nafisa: Sat here wondering how on earth I will get through the next 7-weeks and come out the other end being able to fully get my code on. 16 of us sat in a room that seemed to be embodying the term "blind leading the blind."
-Like</p>
-				<h4><a name = "DayTwo"style = "color:Black">Day Two: We Made a (bad) Website!</a></h4>	
-					<p>Olivia: I started off the day making myself familiar with the terminal on my laptop and all the different features it could do. Just before lunch, as my role as tutor, I gave a quick demo of my development environment and some of the exciting features I had discovered on my command line. 
-					In the afternoon we began to create the bare bones of our website using HTML and CSS. Once this had been made we became to play around with Twitter Bootstrap, and Jekyll, two front-end frameworks for styling sites.
-</p>	
-					<p>Nafisa: Our gits were pushing and pulling and ready to commit our code just simply needed to put together some code, bootstraps and jekyll 
-By 4pm we had a working blog yay! The group morale is a lot better and I think we are on track for all the boot strapping and jekylling tomorrow.. stay tuned to find out.</p>
-				<h4><a name = "DayThree"style = "color:Black">Day Three: Jekyll and Hyde</a></h4>
-					<p>Olivia: I began the day by watching a series of tutorials on twitter bootstrap and working through them to create a more functional and visually appealing site page. Just before lunch I gave a tutorial on how to make a button on your webpage that links to a website (see tutorial here), something I had just learnt that morning! By that afternoon, as a team, we had created five functional pages using twitter bootstrap that looked great! We then began to experiment with Jekyll which proved frustrating, the styling didn’t seem to be very compatible with the bootstrap styling we had used and the result wasn’t great. </p>
-					<p>Nafisa: I think this is the best thing I could have done before starting a new chapter in life - starting my own business. Not even because of the technical aspects of the course. It's the way this course is developing and shaping mindsets and attitudes.
-1. Don't give up - the amount if times things don't work but you have to keep trying and keep figuring out ways to do it 
-2. No one will tell you what to do - same with your business - figure it out 
-3. Patience patience patience 
-4. Don't reinvent the wheel - people have been coding for years- if you can copy their code do it - Greg from sparroh. People have been setting up businesses for years and there is a lot of best practice out there- learn from the best because somewhere somehow someone has done what you want to do in some shape or form!
-Really, not matter what you want to do next in life, this course is for you!</p>
-				<h4><a name = "DayFour"style = "color:Black">Day Four: Hyd-ing Jekyll</a></h4>
-					<p>Olivia: After struggling with Jekyll some more, I decided to ditch it in favour of twitter bootstrap and just focus on making the pages functional and look nice. I began to play around with some of the features of twitter bootstrap and gave a tutorial on the grid system and the how websites built with twitter bootstrap are scalable so can be viewed on any sized device easily (check it out on your phone!).  Towards the end of the day we began the arduous process of linking our five pages together to create our blog in time for the deadline tomorrow. Try as we might, we were unable to link them together without seeing a 404 error and left in the evening feeling rather dejected. 
-
-</p>
-<p>Nafisa: Your environment dictates your work ethic. 
-If feel like the stupidest in the class, good. It means you can only become better. If you're the cleverest in the class, you are your own benchmark. The environment at founders and coders is that no one wants to give up when faced with a challenge And it's helping me develop the same mindset.
-This is the best place to be as a graduate, wantrepreneur, entrepreneur or anything else</p>
-				<h4><a name = "DayFive"style = "color:Black">Day Five: Lets get this Show on the Road</a></h4>
-				<p>Olivia: Poised with a fresh, optimistic attitude we attempted to tackle our linking problem and successfully managed to link our five pages before 10 am! Huzzah! Now that we had a webpage which linked successfully (ish) to the other pages, we were able to focus on the content of the page and add in some new features. I gave a tutorial on using links within a webpage to navigate to different sections and began to build a navigation bar in the blog page. At the end of the first week we had successfully created a functional webpage! Go team #GetmyCodeOn! </p>
-				<p>Nafisa: Everyone should do this course.</p>
-		</div>
-	<div>
-			<h3><a name = "WeekTwo" style = "color:grey">Week Two</a></h3>
-			<h4><a style = "color:Black">Day One</a></h4>
-					<p></p>
-				<h4><a style = "color:Black">Day Two</a></h4>	
-				<h4><a style = "color:Black">Day Three</a></h4>
-				<h4><a style = "color:Black">Day Four</a></h4>
-				<h4><a style = "color:Black">Day Five</a></h4>
-		</div>
-	</div>	
 	
 	
 <div class = "col-md-3">
@@ -228,13 +178,8 @@ This is the best place to be as a graduate, wantrepreneur, entrepreneur or anyth
 	</div>
 </div>
 
-<script src ="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
-<script src ="Boot/js/bootstrap.js"> </script>
-
-<script src = "http://code.jquery.com/jquery-1.11.0.min.js"></script>
-				<script src="http://github.io/wsfan/4Loop/bootstrap/js/bootstrap.js"></script>	
-				<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src ="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src ="Boot/js/bootstrap.js"></script>
 </body>
 
 	
